@@ -15,7 +15,8 @@ Install via Composer :
 composer require deogw/operator-indonesia
 ```
 
-Register Service Provider & Facade (Untuk Laravel < 5.5)
+Register Service Provider & Facade (Untuk Laravel < 5.5) :
+
 Khusus versi Laravel < 5.5 karena belum support fitur auto discover, maka harus mendaftarkan Service Provider dan Facade secara manual.
 
 Tambahkan Service Provider dan Facade pada `config.app`

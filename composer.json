@@ -2,7 +2,6 @@
     "name": "deogw/operator-indonesia",
     "description": "Laravel Package untuk mengecek operator/provider kartu berdasarkan nomor yang ada di Indonesia.",
     "keywords": [
-        "deogw",
         "operator-indonesia",
         "provider-indonesia",
         "check-provider",

@@ -40,7 +40,7 @@ Tambahkan Service Provider dan Facade pada `config.app`
 ## Penggunaan
 
 ``` php
-use OperatorIndonesia;
+use Deogw\OperatorIndonesia\OperatorIndonesia;
 
 OperatorIndonesia::check('0822123456');
 

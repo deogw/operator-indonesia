@@ -1,0 +1,57 @@
+{
+    "name": "deogw/operator-indonesia",
+    "description": "Laravel Package untuk mengecek operator/provider kartu berdasarkan nomor yang ada di Indonesia.",
+    "keywords": [
+        "deogw",
+        "operator-indonesia",
+        "provider-indonesia",
+        "check-provider",
+        "check-kartu"
+    ],
+    "homepage": "https://github.com/deogw/operator-indonesia",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Deo Wibawa",
+            "email": "deowibawa@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "5.7.*|5.8.*|6.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "3.8.*",
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Deogw\\OperatorIndonesia\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Deogw\\OperatorIndonesia\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "/vendor/bin/phpunit",
+        "test-coverage": "/vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Deogw\\OperatorIndonesia\\OperatorIndonesiaServiceProvider"
+            ],
+            "aliases": {
+                "OperatorIndonesia": "Deogw\\OperatorIndonesia\\OperatorIndonesiaFacade"
+            }
+        }
+    }
+}

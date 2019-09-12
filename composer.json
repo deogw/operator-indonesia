@@ -5,7 +5,8 @@
         "operator-indonesia",
         "provider-indonesia",
         "check-provider",
-        "check-kartu"
+        "check-kartu",
+        "check-operator"
     ],
     "homepage": "https://github.com/deogw/operator-indonesia",
     "license": "MIT",

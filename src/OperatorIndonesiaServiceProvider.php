@@ -20,7 +20,7 @@ class OperatorIndonesiaServiceProvider extends ServiceProvider
     public function register()
     {
         // Register the main class to use with the facade
-        $this->app->singleton('operatorindonesia', function () {
+        $this->app->singleton('OperatorIndonesia', function () {
             return new OperatorIndonesia;
         });
     }

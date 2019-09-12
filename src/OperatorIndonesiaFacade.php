@@ -14,6 +14,6 @@ class OperatorIndonesiaFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'operatorindonesia';
+        return 'OperatorIndonesia';
     }
 }

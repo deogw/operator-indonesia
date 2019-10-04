@@ -20,13 +20,17 @@ class OperatorIndonesia
 
     /**
      * Check Operator/Provider berdasarkan prefix dari 4 angka pertama.
-     * @param  String  $phoneNumber
+     * @param  string $phoneNumber
      * @return string Operator
      */
     public static function check($phoneNumber)
     {
         $operator = 'Unknown';
-        $prefixFromNumber = substr($phoneNumber, 0, 4);
+
+        $normalize = preg_replace('/^\+?62/', '0', $phoneNumber);
+
+        $prefixFromNumber = substr($normalize, 0, 4);
+
         foreach (self::$prefix as $key => $provider) {
             if (in_array($prefixFromNumber, $provider)) {
                 $operator = $key;

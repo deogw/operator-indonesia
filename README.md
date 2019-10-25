@@ -44,7 +44,12 @@ use Deogw\OperatorIndonesia\OperatorIndonesia;
 // atau pakai facade :
 // use OperatorIndonesia;
 
+// for 08xxx
 OperatorIndonesia::check('0822123456');
+
+// for 628xxx or +628xxx
+OperatorIndonesia::check('62822123456');
+OperatorIndonesia::check('+62822123456');
 
 /*
 when input number (string) matches with prefix, it returns provider / operator name.
